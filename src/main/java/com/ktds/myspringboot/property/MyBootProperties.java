@@ -7,7 +7,8 @@ import org.springframework.stereotype.Component;
 
 @Component
 @ConfigurationProperties("myboot")
-@Getter @Setter
+@Getter
+@Setter
 public class MyBootProperties {
     private String name;
     private int age;
