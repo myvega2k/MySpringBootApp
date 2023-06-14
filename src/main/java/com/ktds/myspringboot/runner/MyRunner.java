@@ -1,5 +1,6 @@
 package com.ktds.myspringboot.runner;
 
+import com.ktds.myspringboot.dto.Customer;
 import com.ktds.myspringboot.property.MyBootProperties;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -17,9 +18,13 @@ public class MyRunner implements ApplicationRunner {
     @Autowired
     private MyBootProperties properties;
 
+    @Autowired
+    private Customer customer;
+
     //java -jar target\MySpringBoot-App-0.0.1-SNAPSHOT.jar --myboot.name=Spring
     @Override
     public void run(ApplicationArguments args) throws Exception {
+        System.out.println("Customer Bean = " + customer.getName());
         System.out.println("Properties getFullName 값 = " + properties.getFullName());
         System.out.println("Properties getAGe 값 = " + properties.getAge());
 
