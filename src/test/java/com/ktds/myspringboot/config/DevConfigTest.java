@@ -24,7 +24,12 @@ class DevConfigTest {
     @Resource(name="myCustomer")
     Customer customer2;
 
-    @Test
+    @Test @Disabled
+    public void prototype_customer_test() {
+        assertNotSame(customer, customer2);
+    }
+
+    @Test @Disabled
     public void singleton_customer_test(){
         assertSame(customer, customer2);
     }
