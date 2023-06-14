@@ -7,12 +7,12 @@ import org.springframework.context.annotation.Scope;
 @Configuration
 public class DevConfig {
     @Bean
-    @Scope(value = "singleton")
+    @Scope(value = "prototype")
     /**
      * Scope 의 종류
      *  Singleton, Prototype, Request, Session
      */
     public String hello() {
-        return "Development Mode!!";
+        return new String("Development Mode!!");
     }
 }
