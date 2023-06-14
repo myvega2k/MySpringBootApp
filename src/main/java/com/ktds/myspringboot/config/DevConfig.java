@@ -17,7 +17,7 @@ public class DevConfig {
         return new String("Development Mode!!");
     }
 
-    @Bean
+    @Bean("myCustomer")
     @Scope(value = "singleton")
     public Customer customer() {
         return new Customer("DevMode",100);
