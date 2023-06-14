@@ -28,7 +28,8 @@ public class MyRunner implements ApplicationRunner {
     //java -jar target\MySpringBoot-App-0.0.1-SNAPSHOT.jar --myboot.name=Spring
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        logger.debug("Customer Bean = {}", customer.getName());
+        System.out.println("Logger 구현 클래스명 = " + logger.getClass().getName());
+        logger.info("Customer Bean = {}", customer.getName());
         logger.debug("Properties getFullName 값 = {}", properties.getFullName());
         logger.debug("Properties getAGe 값 = {}", properties.getAge());
         logger.debug("환경변수 name 값 = {}", name);
