@@ -20,6 +20,7 @@ class AccountRepositoryTest {
                 .username("ktds")
                 .password("1234")
                 .build(); //Account
-
+        Account savedAccount = accountRepository.save(account);
+        assertEquals("ktds", savedAccount.getUsername());
     }
 }
