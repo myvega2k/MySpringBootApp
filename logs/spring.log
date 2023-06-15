@@ -1919,3 +1919,77 @@ Caused by: java.lang.ClassNotFoundException: com.ktds.myspringboot.entity.Accoun
 2023-06-15T11:01:43.259+09:00  WARN 9648 --- [SpringApplicationShutdownHook] o.s.b.f.s.DisposableBeanAdapter          : Invocation of destroy method failed on bean with name 'entityManagerFactory': org.hibernate.exception.JDBCConnectionException: Unable to release JDBC Connection used for DDL execution
 2023-06-15T11:01:43.259+09:00  INFO 9648 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
 2023-06-15T11:01:43.261+09:00  INFO 9648 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2023-06-15T11:05:15.880+09:00  INFO 9656 --- [main] c.k.m.r.AccountRepositoryTest            : Starting AccountRepositoryTest using Java 17 with PID 9656 (started by User in C:\SpringBoot\MySpringBoot-App)
+2023-06-15T11:05:15.886+09:00 DEBUG 9656 --- [main] c.k.m.r.AccountRepositoryTest            : Running with Spring Boot v3.0.7, Spring v6.0.8
+2023-06-15T11:05:15.887+09:00  INFO 9656 --- [main] c.k.m.r.AccountRepositoryTest            : The following 1 profile is active: "dev"
+2023-06-15T11:05:16.300+09:00  INFO 9656 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-15T11:05:16.339+09:00  INFO 9656 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms. Found 1 JPA repository interfaces.
+2023-06-15T11:05:16.629+09:00  INFO 9656 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2023-06-15T11:05:16.791+09:00  INFO 9656 --- [main] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2023-06-15T11:05:16.792+09:00  INFO 9656 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2023-06-15T11:05:16.824+09:00  INFO 9656 --- [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-15T11:05:16.865+09:00  INFO 9656 --- [main] o.h.Version                              : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-06-15T11:05:17.103+09:00  INFO 9656 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-06-15T11:05:17.615+09:00  INFO 9656 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-15T11:05:17.620+09:00  INFO 9656 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-15T11:05:17.729+09:00  WARN 9656 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-15T11:05:17.965+09:00  WARN 9656 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-06-15T11:05:18.170+09:00  INFO 9656 --- [main] c.k.m.r.AccountRepositoryTest            : Started AccountRepositoryTest in 2.563 seconds (process running for 3.384)
+2023-06-15T11:05:18.172+09:00 DEBUG 9656 --- [main] c.k.m.r.DBRunner                         : DataSource 구현 클래스명 com.zaxxer.hikari.HikariDataSource
+2023-06-15T11:05:18.173+09:00  INFO 9656 --- [main] c.k.m.r.DBRunner                         : DB URL = jdbc:h2:mem:testdb
+2023-06-15T11:05:18.173+09:00  INFO 9656 --- [main] c.k.m.r.DBRunner                         : DB Username = SA
+2023-06-15T11:05:18.173+09:00  INFO 9656 --- [main] c.k.m.r.DBRunner                         : DB Vendor name = H2
+2023-06-15T11:05:18.174+09:00 DEBUG 9656 --- [main] c.k.m.r.MyRunner                         : Environment 사용 myboot.fullName = 스프링 DevMode Boot 
+2023-06-15T11:05:18.174+09:00  INFO 9656 --- [main] c.k.m.r.MyRunner                         : Customer Bean = DevMode
+2023-06-15T11:05:18.174+09:00 DEBUG 9656 --- [main] c.k.m.r.MyRunner                         : Properties getFullName 값 = 스프링 DevMode Boot
+2023-06-15T11:05:18.174+09:00 DEBUG 9656 --- [main] c.k.m.r.MyRunner                         : Properties getAGe 값 = 31
+2023-06-15T11:05:18.174+09:00 DEBUG 9656 --- [main] c.k.m.r.MyRunner                         : 환경변수 name 값 = 스프링 DevMode
+2023-06-15T11:05:18.174+09:00 DEBUG 9656 --- [main] c.k.m.r.MyRunner                         : 환경변수 age 값 = 69
+2023-06-15T11:05:18.175+09:00  INFO 9656 --- [main] c.k.m.r.MyRunner                         : Program Argument = false
+2023-06-15T11:05:18.175+09:00  INFO 9656 --- [main] c.k.m.r.MyRunner                         : VM Argument = false
+2023-06-15T11:05:18.353+09:00  INFO 9656 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-15T11:05:18.354+09:00  INFO 9656 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-15T11:05:18.357+09:00  WARN 9656 --- [SpringApplicationShutdownHook] o.h.e.j.s.SqlExceptionHelper             : SQL Error: 90121, SQLState: 90121
+2023-06-15T11:05:18.357+09:00 ERROR 9656 --- [SpringApplicationShutdownHook] o.h.e.j.s.SqlExceptionHelper             : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-06-15T11:05:18.357+09:00  WARN 9656 --- [SpringApplicationShutdownHook] o.h.e.j.s.SqlExceptionHelper             : SQL Error: 90121, SQLState: 90121
+2023-06-15T11:05:18.357+09:00 ERROR 9656 --- [SpringApplicationShutdownHook] o.h.e.j.s.SqlExceptionHelper             : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-06-15T11:05:18.358+09:00  WARN 9656 --- [SpringApplicationShutdownHook] o.s.b.f.s.DisposableBeanAdapter          : Invocation of destroy method failed on bean with name 'entityManagerFactory': org.hibernate.exception.JDBCConnectionException: Unable to release JDBC Connection used for DDL execution
+2023-06-15T11:05:18.358+09:00  INFO 9656 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2023-06-15T11:05:18.360+09:00  INFO 9656 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2023-06-15T11:05:54.905+09:00  INFO 13964 --- [main] c.k.m.r.AccountRepositoryTest            : Starting AccountRepositoryTest using Java 17 with PID 13964 (started by User in C:\SpringBoot\MySpringBoot-App)
+2023-06-15T11:05:54.911+09:00 DEBUG 13964 --- [main] c.k.m.r.AccountRepositoryTest            : Running with Spring Boot v3.0.7, Spring v6.0.8
+2023-06-15T11:05:54.912+09:00  INFO 13964 --- [main] c.k.m.r.AccountRepositoryTest            : The following 1 profile is active: "dev"
+2023-06-15T11:05:55.345+09:00  INFO 13964 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-15T11:05:55.384+09:00  INFO 13964 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 1 JPA repository interfaces.
+2023-06-15T11:05:55.677+09:00  INFO 13964 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2023-06-15T11:05:55.832+09:00  INFO 13964 --- [main] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2023-06-15T11:05:55.834+09:00  INFO 13964 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2023-06-15T11:05:55.867+09:00  INFO 13964 --- [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-15T11:05:55.908+09:00  INFO 13964 --- [main] o.h.Version                              : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-06-15T11:05:56.150+09:00  INFO 13964 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-06-15T11:05:56.654+09:00  INFO 13964 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-15T11:05:56.660+09:00  INFO 13964 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-15T11:05:56.770+09:00  WARN 13964 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-15T11:05:56.994+09:00  WARN 13964 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-06-15T11:05:57.193+09:00  INFO 13964 --- [main] c.k.m.r.AccountRepositoryTest            : Started AccountRepositoryTest in 2.554 seconds (process running for 3.373)
+2023-06-15T11:05:57.195+09:00 DEBUG 13964 --- [main] c.k.m.r.DBRunner                         : DataSource 구현 클래스명 com.zaxxer.hikari.HikariDataSource
+2023-06-15T11:05:57.195+09:00  INFO 13964 --- [main] c.k.m.r.DBRunner                         : DB URL = jdbc:h2:mem:testdb
+2023-06-15T11:05:57.195+09:00  INFO 13964 --- [main] c.k.m.r.DBRunner                         : DB Username = SA
+2023-06-15T11:05:57.195+09:00  INFO 13964 --- [main] c.k.m.r.DBRunner                         : DB Vendor name = H2
+2023-06-15T11:05:57.196+09:00 DEBUG 13964 --- [main] c.k.m.r.MyRunner                         : Environment 사용 myboot.fullName = 스프링 DevMode Boot 
+2023-06-15T11:05:57.196+09:00  INFO 13964 --- [main] c.k.m.r.MyRunner                         : Customer Bean = DevMode
+2023-06-15T11:05:57.196+09:00 DEBUG 13964 --- [main] c.k.m.r.MyRunner                         : Properties getFullName 값 = 스프링 DevMode Boot
+2023-06-15T11:05:57.196+09:00 DEBUG 13964 --- [main] c.k.m.r.MyRunner                         : Properties getAGe 값 = 42
+2023-06-15T11:05:57.197+09:00 DEBUG 13964 --- [main] c.k.m.r.MyRunner                         : 환경변수 name 값 = 스프링 DevMode
+2023-06-15T11:05:57.197+09:00 DEBUG 13964 --- [main] c.k.m.r.MyRunner                         : 환경변수 age 값 = 72
+2023-06-15T11:05:57.197+09:00  INFO 13964 --- [main] c.k.m.r.MyRunner                         : Program Argument = false
+2023-06-15T11:05:57.197+09:00  INFO 13964 --- [main] c.k.m.r.MyRunner                         : VM Argument = false
+2023-06-15T11:05:57.377+09:00  INFO 13964 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-15T11:05:57.378+09:00  INFO 13964 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-15T11:05:57.380+09:00  WARN 13964 --- [SpringApplicationShutdownHook] o.h.e.j.s.SqlExceptionHelper             : SQL Error: 90121, SQLState: 90121
+2023-06-15T11:05:57.381+09:00 ERROR 13964 --- [SpringApplicationShutdownHook] o.h.e.j.s.SqlExceptionHelper             : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-06-15T11:05:57.381+09:00  WARN 13964 --- [SpringApplicationShutdownHook] o.h.e.j.s.SqlExceptionHelper             : SQL Error: 90121, SQLState: 90121
+2023-06-15T11:05:57.381+09:00 ERROR 13964 --- [SpringApplicationShutdownHook] o.h.e.j.s.SqlExceptionHelper             : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-06-15T11:05:57.382+09:00  WARN 13964 --- [SpringApplicationShutdownHook] o.s.b.f.s.DisposableBeanAdapter          : Invocation of destroy method failed on bean with name 'entityManagerFactory': org.hibernate.exception.JDBCConnectionException: Unable to release JDBC Connection used for DDL execution
+2023-06-15T11:05:57.382+09:00  INFO 13964 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2023-06-15T11:05:57.384+09:00  INFO 13964 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
