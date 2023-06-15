@@ -21,7 +21,7 @@ class AccountRepositoryTest {
 
     @Test
     @Rollback(value = false)
-    void insert_select() {
+    void insert_select_update() {
         //Account 객체생성
         Account account =
                 Account.builder()//AccountBuilder
@@ -37,9 +37,14 @@ class AccountRepositoryTest {
             System.out.println("id  = "+ existAccount.getId());
             System.out.println("Username  = "+ existAccount.getUsername());
         }
-        Account existAccount2 = accountRepository.findById(10L) //Optional<Account>
-                //orElseThrow(Supplier) T get()
-                .orElseThrow(() -> new RuntimeException("Account Not Found"));
-        System.out.println("Username  = "+ existAccount2.getUsername());
+//        Account existAccount2 = accountRepository.findById(10L) //Optional<Account>
+//                //orElseThrow(Supplier) T get()
+//                .orElseThrow(() -> new RuntimeException("Account Not Found"));
+//        System.out.println("Username  = "+ existAccount2.getUsername());
+        //findByUsername() 호출하기
+        Account existAcct = accountRepository.findByUsername("ktds")
+                .orElseGet(() -> Account.builder().build());
+        System.out.println(existAcct.getUsername());
+        existAcct.setUsername("스프링부트");
     }
 }
