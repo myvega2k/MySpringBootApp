@@ -27,7 +27,7 @@ public class UserEntityService {
                 .email(userRequest.getEmail())
                 .build();
         UserEntity savedUser = repository.save(userEntity);
-
+        return modelMapper.map(savedUser, UserResponse.class);
     }
 
 }
