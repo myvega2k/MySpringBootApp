@@ -191,3 +191,278 @@
 2023-06-14T17:02:52.276+09:00  WARN 15836 --- [SpringApplicationShutdownHook] o.s.b.f.s.DisposableBeanAdapter          : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
 2023-06-14T17:02:52.277+09:00  INFO 15836 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
 2023-06-14T17:02:52.278+09:00  INFO 15836 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2023-06-14T17:08:17.904+09:00  INFO 14620 --- [restartedMain] c.k.m.MySpringBootAppApplication         : Starting MySpringBootAppApplication using Java 17 with PID 14620 (C:\SpringBoot\MySpringBoot-App\target\classes started by User in C:\SpringBoot\MySpringBoot-App)
+2023-06-14T17:08:17.912+09:00 DEBUG 14620 --- [restartedMain] c.k.m.MySpringBootAppApplication         : Running with Spring Boot v3.0.7, Spring v6.0.8
+2023-06-14T17:08:17.913+09:00  INFO 14620 --- [restartedMain] c.k.m.MySpringBootAppApplication         : The following 1 profile is active: "dev"
+2023-06-14T17:08:17.951+09:00  INFO 14620 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-14T17:08:17.952+09:00  INFO 14620 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-14T17:08:18.409+09:00  INFO 14620 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-14T17:08:18.425+09:00  INFO 14620 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 JPA repository interfaces.
+2023-06-14T17:08:18.887+09:00  INFO 14620 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-06-14T17:08:18.895+09:00  INFO 14620 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-06-14T17:08:18.895+09:00  INFO 14620 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-14T17:08:18.941+09:00  INFO 14620 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-06-14T17:08:18.943+09:00  INFO 14620 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 989 ms
+2023-06-14T17:08:18.973+09:00  INFO 14620 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2023-06-14T17:08:19.120+09:00  INFO 14620 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2023-06-14T17:08:19.121+09:00  INFO 14620 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2023-06-14T17:08:19.131+09:00  INFO 14620 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2023-06-14T17:08:19.232+09:00  INFO 14620 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-14T17:08:19.268+09:00  INFO 14620 --- [restartedMain] o.h.Version                              : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-06-14T17:08:19.484+09:00  INFO 14620 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-06-14T17:08:19.670+09:00  INFO 14620 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-14T17:08:19.678+09:00  INFO 14620 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-14T17:08:19.726+09:00  WARN 14620 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-14T17:08:19.915+09:00  WARN 14620 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-06-14T17:08:19.984+09:00  INFO 14620 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-14T17:08:20.008+09:00  INFO 14620 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-14T17:08:20.015+09:00  INFO 14620 --- [restartedMain] c.k.m.MySpringBootAppApplication         : Started MySpringBootAppApplication in 2.473 seconds (process running for 2.971)
+2023-06-14T17:08:20.017+09:00 DEBUG 14620 --- [restartedMain] c.k.m.r.DBRunner                         : DataSource 구현 클래스명 com.zaxxer.hikari.HikariDataSource
+2023-06-14T17:08:20.018+09:00  INFO 14620 --- [restartedMain] c.k.m.r.MyRunner                         : Customer Bean = DevMode
+2023-06-14T17:08:20.018+09:00 DEBUG 14620 --- [restartedMain] c.k.m.r.MyRunner                         : Properties getFullName 값 = 스프링 DevMode Boot
+2023-06-14T17:08:20.018+09:00 DEBUG 14620 --- [restartedMain] c.k.m.r.MyRunner                         : Properties getAGe 값 = 32
+2023-06-14T17:08:20.018+09:00 DEBUG 14620 --- [restartedMain] c.k.m.r.MyRunner                         : 환경변수 name 값 = 스프링 DevMode
+2023-06-14T17:08:20.018+09:00 DEBUG 14620 --- [restartedMain] c.k.m.r.MyRunner                         : 환경변수 age 값 = 12
+2023-06-14T17:08:20.018+09:00  INFO 14620 --- [restartedMain] c.k.m.r.MyRunner                         : Program Argument = true
+2023-06-14T17:08:20.018+09:00  INFO 14620 --- [restartedMain] c.k.m.r.MyRunner                         : VM Argument = false
+2023-06-14T17:09:39.973+09:00  INFO 14620 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-06-14T17:09:39.981+09:00  INFO 14620 --- [Thread-6] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-06-14T17:09:39.987+09:00  INFO 14620 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-14T17:09:40.205+09:00  WARN 14620 --- [Thread-6] o.s.b.f.s.DisposableBeanAdapter          : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-06-14T17:09:40.206+09:00  INFO 14620 --- [Thread-6] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2023-06-14T17:09:40.207+09:00  INFO 14620 --- [Thread-6] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2023-06-14T17:09:40.300+09:00  INFO 14620 --- [restartedMain] c.k.m.MySpringBootAppApplication         : Starting MySpringBootAppApplication using Java 17 with PID 14620 (C:\SpringBoot\MySpringBoot-App\target\classes started by User in C:\SpringBoot\MySpringBoot-App)
+2023-06-14T17:09:40.301+09:00 DEBUG 14620 --- [restartedMain] c.k.m.MySpringBootAppApplication         : Running with Spring Boot v3.0.7, Spring v6.0.8
+2023-06-14T17:09:40.301+09:00  INFO 14620 --- [restartedMain] c.k.m.MySpringBootAppApplication         : The following 1 profile is active: "dev"
+2023-06-14T17:09:40.507+09:00  INFO 14620 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-14T17:09:40.511+09:00  INFO 14620 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2023-06-14T17:09:40.602+09:00  INFO 14620 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-06-14T17:09:40.603+09:00  INFO 14620 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-06-14T17:09:40.603+09:00  INFO 14620 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-14T17:09:40.615+09:00  INFO 14620 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-06-14T17:09:40.616+09:00  INFO 14620 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 312 ms
+2023-06-14T17:09:40.630+09:00  INFO 14620 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-2 - Starting...
+2023-06-14T17:09:40.633+09:00  INFO 14620 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:testdb user=SA
+2023-06-14T17:09:40.633+09:00  INFO 14620 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-2 - Start completed.
+2023-06-14T17:09:40.633+09:00  INFO 14620 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2023-06-14T17:09:40.659+09:00  INFO 14620 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-14T17:09:40.665+09:00  INFO 14620 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-06-14T17:09:40.673+09:00  INFO 14620 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-14T17:09:40.673+09:00  INFO 14620 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-14T17:09:40.698+09:00  WARN 14620 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-14T17:09:40.760+09:00  WARN 14620 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-06-14T17:09:40.791+09:00  INFO 14620 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-14T17:09:40.797+09:00  INFO 14620 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-14T17:09:40.800+09:00  INFO 14620 --- [restartedMain] c.k.m.MySpringBootAppApplication         : Started MySpringBootAppApplication in 0.553 seconds (process running for 83.756)
+2023-06-14T17:09:40.801+09:00 DEBUG 14620 --- [restartedMain] c.k.m.r.DBRunner                         : DataSource 구현 클래스명 com.zaxxer.hikari.HikariDataSource
+2023-06-14T17:09:40.802+09:00  INFO 14620 --- [restartedMain] c.k.m.r.MyRunner                         : Customer Bean = DevMode
+2023-06-14T17:09:40.802+09:00 DEBUG 14620 --- [restartedMain] c.k.m.r.MyRunner                         : Properties getFullName 값 = 스프링 DevMode Boot
+2023-06-14T17:09:40.802+09:00 DEBUG 14620 --- [restartedMain] c.k.m.r.MyRunner                         : Properties getAGe 값 = 16
+2023-06-14T17:09:40.802+09:00 DEBUG 14620 --- [restartedMain] c.k.m.r.MyRunner                         : 환경변수 name 값 = 스프링 DevMode
+2023-06-14T17:09:40.802+09:00 DEBUG 14620 --- [restartedMain] c.k.m.r.MyRunner                         : 환경변수 age 값 = 14
+2023-06-14T17:09:40.802+09:00  INFO 14620 --- [restartedMain] c.k.m.r.MyRunner                         : Program Argument = true
+2023-06-14T17:09:40.802+09:00  INFO 14620 --- [restartedMain] c.k.m.r.MyRunner                         : VM Argument = false
+2023-06-14T17:09:40.803+09:00  INFO 14620 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-06-14T17:09:42.230+09:00  INFO 14620 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-06-14T17:09:42.235+09:00  INFO 14620 --- [Thread-8] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-06-14T17:09:42.238+09:00  INFO 14620 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-14T17:09:42.449+09:00  WARN 14620 --- [Thread-8] o.s.b.f.s.DisposableBeanAdapter          : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-06-14T17:09:42.449+09:00  INFO 14620 --- [Thread-8] c.z.h.HikariDataSource                   : HikariPool-2 - Shutdown initiated...
+2023-06-14T17:09:42.450+09:00  INFO 14620 --- [Thread-8] c.z.h.HikariDataSource                   : HikariPool-2 - Shutdown completed.
+2023-06-14T17:09:42.517+09:00  INFO 14620 --- [restartedMain] c.k.m.MySpringBootAppApplication         : Starting MySpringBootAppApplication using Java 17 with PID 14620 (C:\SpringBoot\MySpringBoot-App\target\classes started by User in C:\SpringBoot\MySpringBoot-App)
+2023-06-14T17:09:42.518+09:00 DEBUG 14620 --- [restartedMain] c.k.m.MySpringBootAppApplication         : Running with Spring Boot v3.0.7, Spring v6.0.8
+2023-06-14T17:09:42.518+09:00  INFO 14620 --- [restartedMain] c.k.m.MySpringBootAppApplication         : The following 1 profile is active: "dev"
+2023-06-14T17:09:42.625+09:00  INFO 14620 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-14T17:09:42.627+09:00  INFO 14620 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2023-06-14T17:09:42.682+09:00  INFO 14620 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-06-14T17:09:42.683+09:00  INFO 14620 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-06-14T17:09:42.683+09:00  INFO 14620 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-14T17:09:42.695+09:00  INFO 14620 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-06-14T17:09:42.695+09:00  INFO 14620 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 176 ms
+2023-06-14T17:09:42.701+09:00  INFO 14620 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-3 - Starting...
+2023-06-14T17:09:42.704+09:00  INFO 14620 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-3 - Added connection conn20: url=jdbc:h2:mem:testdb user=SA
+2023-06-14T17:09:42.704+09:00  INFO 14620 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-3 - Start completed.
+2023-06-14T17:09:42.704+09:00  INFO 14620 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2023-06-14T17:09:42.717+09:00  INFO 14620 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-14T17:09:42.721+09:00  INFO 14620 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-06-14T17:09:42.726+09:00  INFO 14620 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-14T17:09:42.727+09:00  INFO 14620 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-14T17:09:42.742+09:00  WARN 14620 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-14T17:09:42.778+09:00  WARN 14620 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-06-14T17:09:42.799+09:00  INFO 14620 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-14T17:09:42.804+09:00  INFO 14620 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-14T17:09:42.806+09:00  INFO 14620 --- [restartedMain] c.k.m.MySpringBootAppApplication         : Started MySpringBootAppApplication in 0.321 seconds (process running for 85.762)
+2023-06-14T17:09:42.807+09:00 DEBUG 14620 --- [restartedMain] c.k.m.r.DBRunner                         : DataSource 구현 클래스명 com.zaxxer.hikari.HikariDataSource
+2023-06-14T17:09:42.808+09:00  INFO 14620 --- [restartedMain] c.k.m.r.MyRunner                         : Customer Bean = DevMode
+2023-06-14T17:09:42.808+09:00 DEBUG 14620 --- [restartedMain] c.k.m.r.MyRunner                         : Properties getFullName 값 = 스프링 DevMode Boot
+2023-06-14T17:09:42.808+09:00 DEBUG 14620 --- [restartedMain] c.k.m.r.MyRunner                         : Properties getAGe 값 = 51
+2023-06-14T17:09:42.808+09:00 DEBUG 14620 --- [restartedMain] c.k.m.r.MyRunner                         : 환경변수 name 값 = 스프링 DevMode
+2023-06-14T17:09:42.808+09:00 DEBUG 14620 --- [restartedMain] c.k.m.r.MyRunner                         : 환경변수 age 값 = 94
+2023-06-14T17:09:42.808+09:00  INFO 14620 --- [restartedMain] c.k.m.r.MyRunner                         : Program Argument = true
+2023-06-14T17:09:42.808+09:00  INFO 14620 --- [restartedMain] c.k.m.r.MyRunner                         : VM Argument = false
+2023-06-14T17:09:42.808+09:00  INFO 14620 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-06-14T17:10:44.491+09:00  INFO 14620 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-06-14T17:10:44.496+09:00  INFO 14620 --- [Thread-12] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-06-14T17:10:44.499+09:00  INFO 14620 --- [Thread-12] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-14T17:10:44.708+09:00  WARN 14620 --- [Thread-12] o.s.b.f.s.DisposableBeanAdapter          : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-06-14T17:10:44.709+09:00  INFO 14620 --- [Thread-12] c.z.h.HikariDataSource                   : HikariPool-3 - Shutdown initiated...
+2023-06-14T17:10:44.709+09:00  INFO 14620 --- [Thread-12] c.z.h.HikariDataSource                   : HikariPool-3 - Shutdown completed.
+2023-06-14T17:10:44.785+09:00  INFO 14620 --- [restartedMain] c.k.m.MySpringBootAppApplication         : Starting MySpringBootAppApplication using Java 17 with PID 14620 (C:\SpringBoot\MySpringBoot-App\target\classes started by User in C:\SpringBoot\MySpringBoot-App)
+2023-06-14T17:10:44.785+09:00 DEBUG 14620 --- [restartedMain] c.k.m.MySpringBootAppApplication         : Running with Spring Boot v3.0.7, Spring v6.0.8
+2023-06-14T17:10:44.785+09:00  INFO 14620 --- [restartedMain] c.k.m.MySpringBootAppApplication         : The following 1 profile is active: "dev"
+2023-06-14T17:10:44.898+09:00  INFO 14620 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-14T17:10:44.900+09:00  INFO 14620 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2023-06-14T17:10:44.962+09:00  INFO 14620 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-06-14T17:10:44.963+09:00  INFO 14620 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-06-14T17:10:44.963+09:00  INFO 14620 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-14T17:10:44.975+09:00  INFO 14620 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-06-14T17:10:44.975+09:00  INFO 14620 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 188 ms
+2023-06-14T17:10:44.982+09:00  INFO 14620 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-4 - Starting...
+2023-06-14T17:10:44.985+09:00  INFO 14620 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-4 - Added connection conn30: url=jdbc:h2:mem:testdb user=SA
+2023-06-14T17:10:44.985+09:00  INFO 14620 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-4 - Start completed.
+2023-06-14T17:10:44.986+09:00  INFO 14620 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2023-06-14T17:10:45.000+09:00  INFO 14620 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-14T17:10:45.004+09:00  INFO 14620 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-06-14T17:10:45.010+09:00  INFO 14620 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-14T17:10:45.010+09:00  INFO 14620 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-14T17:10:45.026+09:00  WARN 14620 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-14T17:10:45.068+09:00  WARN 14620 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-06-14T17:10:45.090+09:00  INFO 14620 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-14T17:10:45.096+09:00  INFO 14620 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-14T17:10:45.098+09:00  INFO 14620 --- [restartedMain] c.k.m.MySpringBootAppApplication         : Started MySpringBootAppApplication in 0.354 seconds (process running for 148.053)
+2023-06-14T17:10:45.098+09:00 DEBUG 14620 --- [restartedMain] c.k.m.r.DBRunner                         : DataSource 구현 클래스명 com.zaxxer.hikari.HikariDataSource
+2023-06-14T17:10:45.099+09:00  INFO 14620 --- [restartedMain] c.k.m.r.MyRunner                         : Customer Bean = DevMode
+2023-06-14T17:10:45.099+09:00 DEBUG 14620 --- [restartedMain] c.k.m.r.MyRunner                         : Properties getFullName 값 = 스프링 DevMode Boot
+2023-06-14T17:10:45.099+09:00 DEBUG 14620 --- [restartedMain] c.k.m.r.MyRunner                         : Properties getAGe 값 = 31
+2023-06-14T17:10:45.099+09:00 DEBUG 14620 --- [restartedMain] c.k.m.r.MyRunner                         : 환경변수 name 값 = 스프링 DevMode
+2023-06-14T17:10:45.099+09:00 DEBUG 14620 --- [restartedMain] c.k.m.r.MyRunner                         : 환경변수 age 값 = 59
+2023-06-14T17:10:45.099+09:00  INFO 14620 --- [restartedMain] c.k.m.r.MyRunner                         : Program Argument = true
+2023-06-14T17:10:45.100+09:00  INFO 14620 --- [restartedMain] c.k.m.r.MyRunner                         : VM Argument = false
+2023-06-14T17:10:45.100+09:00  INFO 14620 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-06-14T17:10:46.527+09:00  INFO 14620 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-06-14T17:10:46.535+09:00  INFO 14620 --- [Thread-16] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-06-14T17:10:46.537+09:00  INFO 14620 --- [Thread-16] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-14T17:10:46.747+09:00  WARN 14620 --- [Thread-16] o.s.b.f.s.DisposableBeanAdapter          : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-06-14T17:10:46.749+09:00  INFO 14620 --- [Thread-16] c.z.h.HikariDataSource                   : HikariPool-4 - Shutdown initiated...
+2023-06-14T17:10:46.758+09:00  INFO 14620 --- [Thread-16] c.z.h.HikariDataSource                   : HikariPool-4 - Shutdown completed.
+2023-06-14T17:10:46.824+09:00  INFO 14620 --- [restartedMain] c.k.m.MySpringBootAppApplication         : Starting MySpringBootAppApplication using Java 17 with PID 14620 (C:\SpringBoot\MySpringBoot-App\target\classes started by User in C:\SpringBoot\MySpringBoot-App)
+2023-06-14T17:10:46.825+09:00 DEBUG 14620 --- [restartedMain] c.k.m.MySpringBootAppApplication         : Running with Spring Boot v3.0.7, Spring v6.0.8
+2023-06-14T17:10:46.825+09:00  INFO 14620 --- [restartedMain] c.k.m.MySpringBootAppApplication         : The following 1 profile is active: "dev"
+2023-06-14T17:10:46.920+09:00  INFO 14620 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-14T17:10:46.921+09:00  INFO 14620 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2023-06-14T17:10:46.968+09:00  INFO 14620 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-06-14T17:10:46.969+09:00  INFO 14620 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-06-14T17:10:46.969+09:00  INFO 14620 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-14T17:10:46.980+09:00  INFO 14620 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-06-14T17:10:46.980+09:00  INFO 14620 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 154 ms
+2023-06-14T17:10:46.986+09:00  INFO 14620 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-5 - Starting...
+2023-06-14T17:10:46.988+09:00  INFO 14620 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-5 - Added connection conn40: url=jdbc:h2:mem:testdb user=SA
+2023-06-14T17:10:46.988+09:00  INFO 14620 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-5 - Start completed.
+2023-06-14T17:10:46.988+09:00  INFO 14620 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2023-06-14T17:10:46.999+09:00  INFO 14620 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-14T17:10:47.002+09:00  INFO 14620 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-06-14T17:10:47.007+09:00  INFO 14620 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-14T17:10:47.007+09:00  INFO 14620 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-14T17:10:47.022+09:00  WARN 14620 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-14T17:10:47.056+09:00  WARN 14620 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-06-14T17:10:47.076+09:00  INFO 14620 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-14T17:10:47.080+09:00  INFO 14620 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-14T17:10:47.082+09:00  INFO 14620 --- [restartedMain] c.k.m.MySpringBootAppApplication         : Started MySpringBootAppApplication in 0.289 seconds (process running for 150.037)
+2023-06-14T17:10:47.083+09:00 DEBUG 14620 --- [restartedMain] c.k.m.r.DBRunner                         : DataSource 구현 클래스명 com.zaxxer.hikari.HikariDataSource
+2023-06-14T17:10:47.084+09:00  INFO 14620 --- [restartedMain] c.k.m.r.MyRunner                         : Customer Bean = DevMode
+2023-06-14T17:10:47.084+09:00 DEBUG 14620 --- [restartedMain] c.k.m.r.MyRunner                         : Properties getFullName 값 = 스프링 DevMode Boot
+2023-06-14T17:10:47.084+09:00 DEBUG 14620 --- [restartedMain] c.k.m.r.MyRunner                         : Properties getAGe 값 = 70
+2023-06-14T17:10:47.084+09:00 DEBUG 14620 --- [restartedMain] c.k.m.r.MyRunner                         : 환경변수 name 값 = 스프링 DevMode
+2023-06-14T17:10:47.084+09:00 DEBUG 14620 --- [restartedMain] c.k.m.r.MyRunner                         : 환경변수 age 값 = 99
+2023-06-14T17:10:47.084+09:00  INFO 14620 --- [restartedMain] c.k.m.r.MyRunner                         : Program Argument = true
+2023-06-14T17:10:47.084+09:00  INFO 14620 --- [restartedMain] c.k.m.r.MyRunner                         : VM Argument = false
+2023-06-14T17:10:47.084+09:00  INFO 14620 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-06-14T17:12:17.459+09:00  INFO 14620 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-06-14T17:12:17.464+09:00  INFO 14620 --- [Thread-20] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-06-14T17:12:17.466+09:00  INFO 14620 --- [Thread-20] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-14T17:12:17.678+09:00  WARN 14620 --- [Thread-20] o.s.b.f.s.DisposableBeanAdapter          : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-06-14T17:12:17.678+09:00  INFO 14620 --- [Thread-20] c.z.h.HikariDataSource                   : HikariPool-5 - Shutdown initiated...
+2023-06-14T17:12:17.678+09:00  INFO 14620 --- [Thread-20] c.z.h.HikariDataSource                   : HikariPool-5 - Shutdown completed.
+2023-06-14T17:12:17.738+09:00  INFO 14620 --- [restartedMain] c.k.m.MySpringBootAppApplication         : Starting MySpringBootAppApplication using Java 17 with PID 14620 (C:\SpringBoot\MySpringBoot-App\target\classes started by User in C:\SpringBoot\MySpringBoot-App)
+2023-06-14T17:12:17.738+09:00 DEBUG 14620 --- [restartedMain] c.k.m.MySpringBootAppApplication         : Running with Spring Boot v3.0.7, Spring v6.0.8
+2023-06-14T17:12:17.738+09:00  INFO 14620 --- [restartedMain] c.k.m.MySpringBootAppApplication         : The following 1 profile is active: "dev"
+2023-06-14T17:12:17.843+09:00  INFO 14620 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-14T17:12:17.845+09:00  INFO 14620 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2023-06-14T17:12:17.902+09:00  INFO 14620 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-06-14T17:12:17.902+09:00  INFO 14620 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-06-14T17:12:17.902+09:00  INFO 14620 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-14T17:12:17.912+09:00  INFO 14620 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-06-14T17:12:17.912+09:00  INFO 14620 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 172 ms
+2023-06-14T17:12:17.919+09:00  INFO 14620 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-6 - Starting...
+2023-06-14T17:12:17.921+09:00  INFO 14620 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-6 - Added connection conn50: url=jdbc:h2:mem:testdb user=SA
+2023-06-14T17:12:17.921+09:00  INFO 14620 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-6 - Start completed.
+2023-06-14T17:12:17.922+09:00  INFO 14620 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2023-06-14T17:12:17.936+09:00  INFO 14620 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-14T17:12:17.940+09:00  INFO 14620 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-06-14T17:12:17.946+09:00  INFO 14620 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-14T17:12:17.946+09:00  INFO 14620 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-14T17:12:17.967+09:00  WARN 14620 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-14T17:12:18.012+09:00  WARN 14620 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-06-14T17:12:18.034+09:00  INFO 14620 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-14T17:12:18.039+09:00  INFO 14620 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-14T17:12:18.041+09:00  INFO 14620 --- [restartedMain] c.k.m.MySpringBootAppApplication         : Started MySpringBootAppApplication in 0.335 seconds (process running for 240.997)
+2023-06-14T17:12:18.042+09:00 DEBUG 14620 --- [restartedMain] c.k.m.r.DBRunner                         : DataSource 구현 클래스명 com.zaxxer.hikari.HikariDataSource
+2023-06-14T17:12:18.043+09:00  INFO 14620 --- [restartedMain] c.k.m.r.DBRunner                         : DB URL = jdbc:h2:mem:testdb
+2023-06-14T17:12:18.043+09:00  INFO 14620 --- [restartedMain] c.k.m.r.DBRunner                         : DB Username = SA
+2023-06-14T17:12:18.043+09:00  INFO 14620 --- [restartedMain] c.k.m.r.DBRunner                         : DB Vendor name = H2
+2023-06-14T17:12:18.043+09:00  INFO 14620 --- [restartedMain] c.k.m.r.MyRunner                         : Customer Bean = DevMode
+2023-06-14T17:12:18.043+09:00 DEBUG 14620 --- [restartedMain] c.k.m.r.MyRunner                         : Properties getFullName 값 = 스프링 DevMode Boot
+2023-06-14T17:12:18.043+09:00 DEBUG 14620 --- [restartedMain] c.k.m.r.MyRunner                         : Properties getAGe 값 = 70
+2023-06-14T17:12:18.043+09:00 DEBUG 14620 --- [restartedMain] c.k.m.r.MyRunner                         : 환경변수 name 값 = 스프링 DevMode
+2023-06-14T17:12:18.044+09:00 DEBUG 14620 --- [restartedMain] c.k.m.r.MyRunner                         : 환경변수 age 값 = 71
+2023-06-14T17:12:18.044+09:00  INFO 14620 --- [restartedMain] c.k.m.r.MyRunner                         : Program Argument = true
+2023-06-14T17:12:18.044+09:00  INFO 14620 --- [restartedMain] c.k.m.r.MyRunner                         : VM Argument = false
+2023-06-14T17:12:18.044+09:00  INFO 14620 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-06-14T17:12:19.468+09:00  INFO 14620 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-06-14T17:12:19.474+09:00  INFO 14620 --- [Thread-24] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-06-14T17:12:19.476+09:00  INFO 14620 --- [Thread-24] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-14T17:12:19.685+09:00  WARN 14620 --- [Thread-24] o.s.b.f.s.DisposableBeanAdapter          : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-06-14T17:12:19.686+09:00  INFO 14620 --- [Thread-24] c.z.h.HikariDataSource                   : HikariPool-6 - Shutdown initiated...
+2023-06-14T17:12:19.687+09:00  INFO 14620 --- [Thread-24] c.z.h.HikariDataSource                   : HikariPool-6 - Shutdown completed.
+2023-06-14T17:12:19.749+09:00  INFO 14620 --- [restartedMain] c.k.m.MySpringBootAppApplication         : Starting MySpringBootAppApplication using Java 17 with PID 14620 (C:\SpringBoot\MySpringBoot-App\target\classes started by User in C:\SpringBoot\MySpringBoot-App)
+2023-06-14T17:12:19.750+09:00 DEBUG 14620 --- [restartedMain] c.k.m.MySpringBootAppApplication         : Running with Spring Boot v3.0.7, Spring v6.0.8
+2023-06-14T17:12:19.750+09:00  INFO 14620 --- [restartedMain] c.k.m.MySpringBootAppApplication         : The following 1 profile is active: "dev"
+2023-06-14T17:12:19.839+09:00  INFO 14620 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-14T17:12:19.840+09:00  INFO 14620 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2023-06-14T17:12:19.883+09:00  INFO 14620 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-06-14T17:12:19.884+09:00  INFO 14620 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-06-14T17:12:19.884+09:00  INFO 14620 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-14T17:12:19.893+09:00  INFO 14620 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-06-14T17:12:19.893+09:00  INFO 14620 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 142 ms
+2023-06-14T17:12:19.898+09:00  INFO 14620 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-7 - Starting...
+2023-06-14T17:12:19.901+09:00  INFO 14620 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-7 - Added connection conn60: url=jdbc:h2:mem:testdb user=SA
+2023-06-14T17:12:19.901+09:00  INFO 14620 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-7 - Start completed.
+2023-06-14T17:12:19.901+09:00  INFO 14620 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2023-06-14T17:12:19.915+09:00  INFO 14620 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-14T17:12:19.919+09:00  INFO 14620 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-06-14T17:12:19.924+09:00  INFO 14620 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-14T17:12:19.924+09:00  INFO 14620 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-14T17:12:19.942+09:00  WARN 14620 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-14T17:12:19.983+09:00  WARN 14620 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-06-14T17:12:20.002+09:00  INFO 14620 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-14T17:12:20.006+09:00  INFO 14620 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-14T17:12:20.008+09:00  INFO 14620 --- [restartedMain] c.k.m.MySpringBootAppApplication         : Started MySpringBootAppApplication in 0.289 seconds (process running for 242.963)
+2023-06-14T17:12:20.009+09:00 DEBUG 14620 --- [restartedMain] c.k.m.r.DBRunner                         : DataSource 구현 클래스명 com.zaxxer.hikari.HikariDataSource
+2023-06-14T17:12:20.009+09:00  INFO 14620 --- [restartedMain] c.k.m.r.DBRunner                         : DB URL = jdbc:h2:mem:testdb
+2023-06-14T17:12:20.009+09:00  INFO 14620 --- [restartedMain] c.k.m.r.DBRunner                         : DB Username = SA
+2023-06-14T17:12:20.009+09:00  INFO 14620 --- [restartedMain] c.k.m.r.DBRunner                         : DB Vendor name = H2
+2023-06-14T17:12:20.010+09:00  INFO 14620 --- [restartedMain] c.k.m.r.MyRunner                         : Customer Bean = DevMode
+2023-06-14T17:12:20.010+09:00 DEBUG 14620 --- [restartedMain] c.k.m.r.MyRunner                         : Properties getFullName 값 = 스프링 DevMode Boot
+2023-06-14T17:12:20.010+09:00 DEBUG 14620 --- [restartedMain] c.k.m.r.MyRunner                         : Properties getAGe 값 = 3
+2023-06-14T17:12:20.010+09:00 DEBUG 14620 --- [restartedMain] c.k.m.r.MyRunner                         : 환경변수 name 값 = 스프링 DevMode
+2023-06-14T17:12:20.010+09:00 DEBUG 14620 --- [restartedMain] c.k.m.r.MyRunner                         : 환경변수 age 값 = 41
+2023-06-14T17:12:20.010+09:00  INFO 14620 --- [restartedMain] c.k.m.r.MyRunner                         : Program Argument = true
+2023-06-14T17:12:20.010+09:00  INFO 14620 --- [restartedMain] c.k.m.r.MyRunner                         : VM Argument = false
+2023-06-14T17:12:20.010+09:00  INFO 14620 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-06-14T17:13:48.386+09:00  INFO 14620 --- [http-nio-8080-exec-6] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-14T17:13:48.386+09:00  INFO 14620 --- [http-nio-8080-exec-6] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2023-06-14T17:13:48.387+09:00  INFO 14620 --- [http-nio-8080-exec-6] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2023-06-14T17:28:30.621+09:00  INFO 14620 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-14T17:28:31.048+09:00  WARN 14620 --- [SpringApplicationShutdownHook] o.s.b.f.s.DisposableBeanAdapter          : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-06-14T17:28:31.049+09:00  INFO 14620 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-7 - Shutdown initiated...
+2023-06-14T17:28:31.207+09:00  INFO 14620 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-7 - Shutdown completed.

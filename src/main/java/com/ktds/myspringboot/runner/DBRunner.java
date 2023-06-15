@@ -8,6 +8,8 @@ import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 import javax.sql.DataSource;
+import java.sql.Connection;
+import java.sql.DatabaseMetaData;
 
 @Component
 @Order(1)
@@ -19,5 +21,10 @@ public class DBRunner implements ApplicationRunner {
     @Override
     public void run(ApplicationArguments args) throws Exception {
         log.debug("DataSource 구현 클래스명 {}", dataSource.getClass().getName());
+        Connection connection = dataSource.getConnection();
+        DatabaseMetaData metaData = connection.getMetaData();
+        log.info("DB URL = {}", metaData.getURL());
+        log.info("DB Username = {}", metaData.getUserName());
+        log.info("DB Vendor name = {}", metaData.getDatabaseProductName());
     }
 }
