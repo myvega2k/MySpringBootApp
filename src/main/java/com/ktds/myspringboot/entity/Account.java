@@ -18,7 +18,7 @@ public class Account {
     private String password;
 
     @Builder
-    protected Account(Long id, String username, String password) {
+    public Account(Long id, String username, String password) {
         this.id = id;
         this.username = username;
         this.password = password;
