@@ -2879,3 +2879,87 @@ org.springframework.transaction.UnexpectedRollbackException: Transaction silentl
 2023-06-15T12:12:32.936+09:00  INFO 2060 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-06-15T12:12:32.937+09:00  INFO 2060 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
 2023-06-15T12:12:32.941+09:00  INFO 2060 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2023-06-15T12:13:18.374+09:00  INFO 16248 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-06-15T12:13:18.379+09:00  INFO 16248 --- [Thread-29] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-06-15T12:13:18.382+09:00  INFO 16248 --- [Thread-29] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-15T12:13:18.382+09:00  INFO 16248 --- [Thread-29] c.z.h.HikariDataSource                   : HikariPool-7 - Shutdown initiated...
+2023-06-15T12:13:18.386+09:00  INFO 16248 --- [Thread-29] c.z.h.HikariDataSource                   : HikariPool-7 - Shutdown completed.
+2023-06-15T12:13:18.461+09:00  INFO 16248 --- [restartedMain] c.k.m.MySpringBootAppApplication         : Starting MySpringBootAppApplication using Java 17 with PID 16248 (C:\SpringBoot\MySpringBoot-App\target\classes started by User in C:\SpringBoot\MySpringBoot-App)
+2023-06-15T12:13:18.461+09:00  INFO 16248 --- [restartedMain] c.k.m.MySpringBootAppApplication         : The following 1 profile is active: "prod"
+2023-06-15T12:13:18.542+09:00  INFO 16248 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-15T12:13:18.547+09:00  INFO 16248 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interfaces.
+2023-06-15T12:13:18.591+09:00  INFO 16248 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-06-15T12:13:18.592+09:00  INFO 16248 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-06-15T12:13:18.592+09:00  INFO 16248 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-15T12:13:18.599+09:00  INFO 16248 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-06-15T12:13:18.600+09:00  INFO 16248 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 138 ms
+2023-06-15T12:13:18.606+09:00  INFO 16248 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-8 - Starting...
+2023-06-15T12:13:18.608+09:00  INFO 16248 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-8 - Added connection org.mariadb.jdbc.Connection@1adee45d
+2023-06-15T12:13:18.608+09:00  INFO 16248 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-8 - Start completed.
+2023-06-15T12:13:18.608+09:00  INFO 16248 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2023-06-15T12:13:18.620+09:00  INFO 16248 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-15T12:13:18.623+09:00  INFO 16248 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+2023-06-15T12:13:18.679+09:00  INFO 16248 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-15T12:13:18.679+09:00  INFO 16248 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-15T12:13:18.690+09:00  WARN 16248 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-15T12:13:18.718+09:00  WARN 16248 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-06-15T12:13:18.748+09:00  INFO 16248 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-15T12:13:18.752+09:00  INFO 16248 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-15T12:13:18.754+09:00  INFO 16248 --- [restartedMain] c.k.m.MySpringBootAppApplication         : Started MySpringBootAppApplication in 0.326 seconds (process running for 898.841)
+2023-06-15T12:13:18.755+09:00  INFO 16248 --- [restartedMain] c.k.m.r.DBRunner                         : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2023-06-15T12:13:18.755+09:00  INFO 16248 --- [restartedMain] c.k.m.r.DBRunner                         : DB Username = boot
+2023-06-15T12:13:18.755+09:00  INFO 16248 --- [restartedMain] c.k.m.r.DBRunner                         : DB Vendor name = MariaDB
+2023-06-15T12:13:18.756+09:00  INFO 16248 --- [restartedMain] c.k.m.r.MyRunner                         : Customer Bean = ProdMode
+2023-06-15T12:13:18.756+09:00  INFO 16248 --- [restartedMain] c.k.m.r.MyRunner                         : Program Argument = true
+2023-06-15T12:13:18.756+09:00  INFO 16248 --- [restartedMain] c.k.m.r.MyRunner                         : VM Argument = false
+2023-06-15T12:13:18.756+09:00  INFO 16248 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-06-15T12:14:34.827+09:00  INFO 14012 --- [main] c.k.m.r.AccountRepositoryTest            : Starting AccountRepositoryTest using Java 17 with PID 14012 (started by User in C:\SpringBoot\MySpringBoot-App)
+2023-06-15T12:14:34.834+09:00  INFO 14012 --- [main] c.k.m.r.AccountRepositoryTest            : The following 1 profile is active: "prod"
+2023-06-15T12:14:35.254+09:00  INFO 14012 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-15T12:14:35.292+09:00  INFO 14012 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 1 JPA repository interfaces.
+2023-06-15T12:14:35.592+09:00  INFO 14012 --- [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-15T12:14:35.628+09:00  INFO 14012 --- [main] o.h.Version                              : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-06-15T12:14:35.867+09:00  INFO 14012 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2023-06-15T12:14:35.916+09:00  INFO 14012 --- [main] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@e2b3026
+2023-06-15T12:14:35.917+09:00  INFO 14012 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2023-06-15T12:14:35.945+09:00  INFO 14012 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+2023-06-15T12:14:36.484+09:00  INFO 14012 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-15T12:14:36.490+09:00  INFO 14012 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-15T12:14:36.617+09:00  WARN 14012 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-15T12:14:36.831+09:00  WARN 14012 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-06-15T12:14:37.050+09:00  INFO 14012 --- [main] c.k.m.r.AccountRepositoryTest            : Started AccountRepositoryTest in 2.484 seconds (process running for 3.323)
+2023-06-15T12:14:37.052+09:00  INFO 14012 --- [main] c.k.m.r.DBRunner                         : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2023-06-15T12:14:37.052+09:00  INFO 14012 --- [main] c.k.m.r.DBRunner                         : DB Username = boot
+2023-06-15T12:14:37.052+09:00  INFO 14012 --- [main] c.k.m.r.DBRunner                         : DB Vendor name = MariaDB
+2023-06-15T12:14:37.053+09:00  INFO 14012 --- [main] c.k.m.r.MyRunner                         : Customer Bean = ProdMode
+2023-06-15T12:14:37.053+09:00  INFO 14012 --- [main] c.k.m.r.MyRunner                         : Program Argument = false
+2023-06-15T12:14:37.053+09:00  INFO 14012 --- [main] c.k.m.r.MyRunner                         : VM Argument = false
+2023-06-15T12:14:37.234+09:00  INFO 14012 --- [main] c.k.m.r.AccountRepositoryTest            : Id = 1 Username = ktds
+2023-06-15T12:14:37.258+09:00  INFO 14012 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-15T12:14:37.260+09:00  INFO 14012 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2023-06-15T12:14:37.263+09:00  INFO 14012 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2023-06-15T12:16:18.277+09:00  INFO 1396 --- [main] c.k.m.r.AccountRepositoryTest            : Starting AccountRepositoryTest using Java 17 with PID 1396 (started by User in C:\SpringBoot\MySpringBoot-App)
+2023-06-15T12:16:18.284+09:00  INFO 1396 --- [main] c.k.m.r.AccountRepositoryTest            : The following 1 profile is active: "prod"
+2023-06-15T12:16:18.705+09:00  INFO 1396 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-15T12:16:18.743+09:00  INFO 1396 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 1 JPA repository interfaces.
+2023-06-15T12:16:19.067+09:00  INFO 1396 --- [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-15T12:16:19.109+09:00  INFO 1396 --- [main] o.h.Version                              : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-06-15T12:16:19.385+09:00  INFO 1396 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2023-06-15T12:16:19.438+09:00  INFO 1396 --- [main] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@22fb9a2c
+2023-06-15T12:16:19.440+09:00  INFO 1396 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2023-06-15T12:16:19.473+09:00  INFO 1396 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+2023-06-15T12:16:20.057+09:00  INFO 1396 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-15T12:16:20.070+09:00  INFO 1396 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-15T12:16:20.193+09:00  WARN 1396 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-15T12:16:20.405+09:00  WARN 1396 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-06-15T12:16:20.617+09:00  INFO 1396 --- [main] c.k.m.r.AccountRepositoryTest            : Started AccountRepositoryTest in 2.617 seconds (process running for 3.462)
+2023-06-15T12:16:20.619+09:00  INFO 1396 --- [main] c.k.m.r.DBRunner                         : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2023-06-15T12:16:20.619+09:00  INFO 1396 --- [main] c.k.m.r.DBRunner                         : DB Username = boot
+2023-06-15T12:16:20.619+09:00  INFO 1396 --- [main] c.k.m.r.DBRunner                         : DB Vendor name = MariaDB
+2023-06-15T12:16:20.620+09:00  INFO 1396 --- [main] c.k.m.r.MyRunner                         : Customer Bean = ProdMode
+2023-06-15T12:16:20.620+09:00  INFO 1396 --- [main] c.k.m.r.MyRunner                         : Program Argument = false
+2023-06-15T12:16:20.620+09:00  INFO 1396 --- [main] c.k.m.r.MyRunner                         : VM Argument = false
+2023-06-15T12:16:20.803+09:00  INFO 1396 --- [main] c.k.m.r.AccountRepositoryTest            : Id = 1 Username = ktds
+2023-06-15T12:16:20.823+09:00  INFO 1396 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-15T12:16:20.825+09:00  INFO 1396 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2023-06-15T12:16:20.827+09:00  INFO 1396 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.

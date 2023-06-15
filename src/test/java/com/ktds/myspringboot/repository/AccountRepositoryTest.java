@@ -34,6 +34,8 @@ class AccountRepositoryTest {
         if(optional.isPresent()){
             Account existAccount = optional.get();
             log.info("Id = {} Username = {}", existAccount.getId(), existAccount.getUsername());
+            System.out.println("id  = "+ existAccount.getId());
+            System.out.println("Username  = "+ existAccount.getUsername());
         }
     }
 }
