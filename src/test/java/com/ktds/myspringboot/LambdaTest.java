@@ -29,12 +29,13 @@ public class LambdaTest {
         //3. Method Reference
         customerList.forEach(System.out::println);
 
-        //Customer의 age 합계를 계산하기
+        //Customer의 age 합계를 계산하기 (age >= 50)
         int sumOfAge =
                 customerList.stream() //Stream<Customer>
-                //.map(customer -> customer.getAge()) //Stream<Integer>
-                .mapToInt(Customer::getAge)//IntStream
-                .sum();
+                        .filter(customer -> customer.getAge() >= 50) //Stream<Customer>
+                        //.mapToInt(customer -> customer.getAge()) //Stream<Integer>
+                        .mapToInt(Customer::getAge)//IntStream
+                        .sum();
         System.out.println("나이 합계 " + sumOfAge);
     }
 
