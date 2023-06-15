@@ -37,5 +37,9 @@ class AccountRepositoryTest {
             System.out.println("id  = "+ existAccount.getId());
             System.out.println("Username  = "+ existAccount.getUsername());
         }
+        Account existAccount2 = accountRepository.findById(10L) //Optional<Account>
+                //orElseThrow(Supplier) T get()
+                .orElseThrow(() -> new RuntimeException("Account Not Found"));
+        System.out.println("Username  = "+ existAccount2.getUsername());
     }
 }
