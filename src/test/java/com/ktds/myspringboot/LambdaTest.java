@@ -4,12 +4,38 @@ import com.ktds.myspringboot.dto.Customer;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
+import java.util.function.Consumer;
 
 public class LambdaTest {
 
     @Test
     void consumer_test() {
-        List.of(new Customer("boot",10), new Customer("msa",20));
+        //Immutable List
+        List<Customer> customerList =
+                List.of(new Customer("boot", 10),
+                        new Customer("msa", 20),
+                        new Customer("ktds", 50),
+                        new Customer("wifi", 70));
+
+        //1. Anonymous Inner Class
+        customerList.forEach(new Consumer<Customer>() {
+            @Override
+            public void accept(Customer customer) {
+                System.out.println(customer);
+            }
+        });
+        //2. Lambda Expression
+        customerList.forEach(cust -> System.out.println(cust));
+        //3. Method Reference
+        customerList.forEach(System.out::println);
+
+        //Customer의 age 합계를 계산하기
+        int sumOfAge =
+                customerList.stream() //Stream<Customer>
+                //.map(customer -> customer.getAge()) //Stream<Integer>
+                .mapToInt(Customer::getAge)//IntStream
+                .sum();
+        System.out.println("나이 합계 " + sumOfAge);
     }
 
     @Test
