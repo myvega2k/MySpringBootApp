@@ -8,7 +8,7 @@ import lombok.*;
 @NoArgsConstructor(access=AccessLevel.PROTECTED)
 @Getter @Setter
 public class Account {
-    @Id @GeneratedValue(strategy = GenerationType.AUTO)
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(unique = true, nullable = false)
@@ -16,7 +16,6 @@ public class Account {
 
     @Column(nullable = false)
     private String password;
-
     @Builder
     public Account(Long id, String username, String password) {
         this.id = id;
