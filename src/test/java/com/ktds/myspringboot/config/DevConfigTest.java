@@ -17,11 +17,11 @@ class DevConfigTest {
     @Resource(name="hello")
     String hello2;
 
-    @Autowired
+    @Autowired //의존하는 객체를 Type으로 찾는 방식 
     @Qualifier("myCustomer")
     Customer customer;
 
-    @Resource(name="myCustomer")
+    @Resource(name="myCustomer") //의존하는 객체를 Bean name(id)로 찾는 방식 
     Customer customer2;
 
     @Test @Disabled
