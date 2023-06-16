@@ -62,4 +62,12 @@ public class UserEntityService {
         }
         return ResponseEntity.ok(modelMapper.map(optional.get(), UserResponse.class));
     }
+
+    public UserResponse updateUser(String email, UserRequest request){
+        UserEntity existUser = repository.findByEmail(email)
+                .orElseThrow(() -> new ResourceNotFoundException("Users", "email", email));
+        //setter 호출
+        existUser.setName(request.getName());
+        return modelMapper.map(existUser, UserResponse.class);
+    }
 }
