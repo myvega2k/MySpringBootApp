@@ -22,6 +22,11 @@ public class UserController {
         return "index";
     }
 
+    @GetMapping("/signup")
+    public String showSignUpForm(UserRequest user) {
+        return "add-user";
+    }
+
     @PostMapping("/adduser")
     public String addUser(@Valid UserRequest user, BindingResult result, Model model) {
         if (result.hasErrors()) {

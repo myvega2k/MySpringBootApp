@@ -10805,3 +10805,38 @@ java.sql.SQLIntegrityConstraintViolationException: (conn=674) Duplicate entry 's
 2023-06-16T15:24:39.616+09:00  INFO 11848 --- [restartedMain] c.k.m.r.MyRunner                         : Program Argument = true
 2023-06-16T15:24:39.616+09:00  INFO 11848 --- [restartedMain] c.k.m.r.MyRunner                         : VM Argument = false
 2023-06-16T15:24:39.617+09:00  INFO 11848 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-06-16T15:25:05.514+09:00  INFO 11848 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-06-16T15:25:05.522+09:00  INFO 11848 --- [Thread-31] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-06-16T15:25:05.524+09:00  INFO 11848 --- [Thread-31] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-16T15:25:05.524+09:00  INFO 11848 --- [Thread-31] c.z.h.HikariDataSource                   : HikariPool-8 - Shutdown initiated...
+2023-06-16T15:25:05.528+09:00  INFO 11848 --- [Thread-31] c.z.h.HikariDataSource                   : HikariPool-8 - Shutdown completed.
+2023-06-16T15:25:05.586+09:00  INFO 11848 --- [restartedMain] c.k.m.MySpringBootAppApplication         : Starting MySpringBootAppApplication using Java 17 with PID 11848 (C:\SpringBoot\MySpringBoot-App\target\classes started by User in C:\SpringBoot\MySpringBoot-App)
+2023-06-16T15:25:05.586+09:00  INFO 11848 --- [restartedMain] c.k.m.MySpringBootAppApplication         : The following 1 profile is active: "prod"
+2023-06-16T15:25:05.665+09:00  INFO 11848 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-16T15:25:05.671+09:00  INFO 11848 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 2 JPA repository interfaces.
+2023-06-16T15:25:05.713+09:00  INFO 11848 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-06-16T15:25:05.714+09:00  INFO 11848 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-06-16T15:25:05.714+09:00  INFO 11848 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-16T15:25:05.723+09:00  INFO 11848 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-06-16T15:25:05.723+09:00  INFO 11848 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 136 ms
+2023-06-16T15:25:05.727+09:00  INFO 11848 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-9 - Starting...
+2023-06-16T15:25:05.730+09:00  INFO 11848 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-9 - Added connection org.mariadb.jdbc.Connection@5a7cc759
+2023-06-16T15:25:05.730+09:00  INFO 11848 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-9 - Start completed.
+2023-06-16T15:25:05.730+09:00  INFO 11848 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2023-06-16T15:25:05.740+09:00  INFO 11848 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-16T15:25:05.743+09:00  INFO 11848 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2023-06-16T15:25:05.744+09:00  WARN 11848 --- [restartedMain] o.h.o.deprecation                        : HHH90000026: MariaDB103Dialect has been deprecated; use org.hibernate.dialect.MariaDBDialect instead
+2023-06-16T15:25:05.774+09:00  INFO 11848 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-16T15:25:05.775+09:00  INFO 11848 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-16T15:25:05.807+09:00  WARN 11848 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-16T15:25:05.823+09:00  INFO 11848 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-06-16T15:25:05.849+09:00  INFO 11848 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-16T15:25:05.852+09:00  INFO 11848 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-16T15:25:05.854+09:00  INFO 11848 --- [restartedMain] c.k.m.MySpringBootAppApplication         : Started MySpringBootAppApplication in 0.294 seconds (process running for 1341.721)
+2023-06-16T15:25:05.855+09:00  INFO 11848 --- [restartedMain] c.k.m.r.DBRunner                         : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2023-06-16T15:25:05.855+09:00  INFO 11848 --- [restartedMain] c.k.m.r.DBRunner                         : DB Username = boot
+2023-06-16T15:25:05.855+09:00  INFO 11848 --- [restartedMain] c.k.m.r.DBRunner                         : DB Vendor name = MariaDB
+2023-06-16T15:25:05.855+09:00  INFO 11848 --- [restartedMain] c.k.m.r.MyRunner                         : Customer Bean = ProdMode
+2023-06-16T15:25:05.855+09:00  INFO 11848 --- [restartedMain] c.k.m.r.MyRunner                         : Program Argument = true
+2023-06-16T15:25:05.855+09:00  INFO 11848 --- [restartedMain] c.k.m.r.MyRunner                         : VM Argument = false
+2023-06-16T15:25:05.856+09:00  INFO 11848 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
