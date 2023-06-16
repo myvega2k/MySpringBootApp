@@ -9,6 +9,11 @@ import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+import java.util.stream.Collectors;
+
+import static java.util.stream.Collectors.toList;
+
 @Service
 @Transactional
 @RequiredArgsConstructor
@@ -29,5 +34,13 @@ public class UserEntityService {
         UserEntity savedUser = repository.save(userEntity);
         return modelMapper.map(savedUser, UserResponse.class);
     }
+
+    public List<UserResponse> listUser() {
+        List<UserEntity> userEntityList = repository.findAll();
+        return userEntityList.stream() //Stream<UserEntity>
+                .map(entity -> modelMapper.map(entity, UserResponse.class)) //Stream<UserResponse>
+                .collect(toList());
+    }
+
 
 }

@@ -5089,3 +5089,28 @@ java.lang.IllegalStateException: org.springframework.web.context.support.Generic
 2023-06-15T17:33:02.626+09:00  INFO 1624 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-06-15T17:33:02.627+09:00  INFO 1624 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
 2023-06-15T17:33:02.630+09:00  INFO 1624 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2023-06-16T09:36:30.138+09:00  INFO 3460 --- [main] c.k.m.s.UserEntityServiceTest            : Starting UserEntityServiceTest using Java 17 with PID 3460 (started by User in C:\SpringBoot\MySpringBoot-App)
+2023-06-16T09:36:30.149+09:00  INFO 3460 --- [main] c.k.m.s.UserEntityServiceTest            : The following 1 profile is active: "prod"
+2023-06-16T09:36:30.762+09:00  INFO 3460 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-16T09:36:30.814+09:00  INFO 3460 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 2 JPA repository interfaces.
+2023-06-16T09:36:31.213+09:00  INFO 3460 --- [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-16T09:36:31.274+09:00  INFO 3460 --- [main] o.h.Version                              : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-06-16T09:36:31.615+09:00  INFO 3460 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2023-06-16T09:36:31.681+09:00  INFO 3460 --- [main] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@749baa0c
+2023-06-16T09:36:31.682+09:00  INFO 3460 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2023-06-16T09:36:31.701+09:00  INFO 3460 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2023-06-16T09:36:31.703+09:00  WARN 3460 --- [main] o.h.o.deprecation                        : HHH90000026: MariaDB103Dialect has been deprecated; use org.hibernate.dialect.MariaDBDialect instead
+2023-06-16T09:36:32.407+09:00  INFO 3460 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-16T09:36:32.415+09:00  INFO 3460 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-16T09:36:32.826+09:00  WARN 3460 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-16T09:36:33.082+09:00  WARN 3460 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-06-16T09:36:33.171+09:00  INFO 3460 --- [main] c.k.m.s.UserEntityServiceTest            : Started UserEntityServiceTest in 3.396 seconds (process running for 5.43)
+2023-06-16T09:36:33.173+09:00  INFO 3460 --- [main] c.k.m.r.DBRunner                         : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2023-06-16T09:36:33.173+09:00  INFO 3460 --- [main] c.k.m.r.DBRunner                         : DB Username = boot
+2023-06-16T09:36:33.173+09:00  INFO 3460 --- [main] c.k.m.r.DBRunner                         : DB Vendor name = MariaDB
+2023-06-16T09:36:33.174+09:00  INFO 3460 --- [main] c.k.m.r.MyRunner                         : Customer Bean = ProdMode
+2023-06-16T09:36:33.174+09:00  INFO 3460 --- [main] c.k.m.r.MyRunner                         : Program Argument = false
+2023-06-16T09:36:33.174+09:00  INFO 3460 --- [main] c.k.m.r.MyRunner                         : VM Argument = false
+2023-06-16T09:36:33.390+09:00  INFO 3460 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-16T09:36:33.392+09:00  INFO 3460 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2023-06-16T09:36:33.397+09:00  INFO 3460 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.

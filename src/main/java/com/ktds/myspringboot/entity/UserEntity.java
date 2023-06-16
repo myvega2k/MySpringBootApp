@@ -8,7 +8,6 @@ import org.hibernate.annotations.DynamicUpdate;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
-import java.util.Date;
 
 @Entity
 @Table(name = "users")
@@ -33,6 +32,5 @@ public class UserEntity implements Serializable {
     //@ColumnDefault(value = "CURRENT_TIMESTAMP")
     @CreationTimestamp
     private LocalDateTime createdAt = LocalDateTime.now();
-
 
 }
