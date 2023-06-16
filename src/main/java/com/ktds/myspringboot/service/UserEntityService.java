@@ -35,11 +35,12 @@ public class UserEntityService {
         return modelMapper.map(savedUser, UserResponse.class);
     }
 
+    @Transactional(readOnly = true)
     public List<UserResponse> listUser() {
         List<UserEntity> userEntityList = repository.findAll();
         return userEntityList.stream() //Stream<UserEntity>
                 .map(entity -> modelMapper.map(entity, UserResponse.class)) //Stream<UserResponse>
-                .collect(toList());
+                .collect(toList()); //List<UserResponse>
     }
 
 
