@@ -60,5 +60,6 @@ public class UserEntityService {
             return ResponseEntity.status(HttpStatus.NOT_FOUND)
                     .body(email +"에 해당하는 User가 존재하지 않습니다!");
         }
+        return ResponseEntity.ok(modelMapper.map(optional.get(), UserResponse.class));
     }
 }
