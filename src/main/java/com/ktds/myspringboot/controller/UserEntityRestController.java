@@ -30,7 +30,7 @@ public class UserEntityRestController {
         return service.getUserById(id);
     }
 
-    @GetMapping(value = "/{email}",produces = {"application/json;charset=utf-8"})
+    @GetMapping(value = "/email/{email}",produces = {"application/json;charset=utf-8"})
     public ResponseEntity<?> getUserByEmail(@PathVariable String email){
         return service.getUserByEmail(email);
     }
