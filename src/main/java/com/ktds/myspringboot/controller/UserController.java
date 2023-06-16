@@ -28,7 +28,8 @@ public class UserController {
     }
 
     @PostMapping("/adduser")
-    public String addUser(@Valid UserRequest user, BindingResult result, Model model) {
+    public String addUser(@Valid UserRequest user,
+                          BindingResult result, Model model) {
         if (result.hasErrors()) {
             return "add-user";
         }
