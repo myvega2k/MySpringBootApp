@@ -1,5 +1,6 @@
 package com.ktds.myspringboot.dto;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -17,6 +18,7 @@ public class UserResponse {
     private String email;
     private LocalDateTime createdAt;
 
+    @JsonFormat(pattern = "yyyy-MM-dd:hh:mm:ss")
     public LocalDateTime getCreatedAt() {
         return createdAt;
     }
