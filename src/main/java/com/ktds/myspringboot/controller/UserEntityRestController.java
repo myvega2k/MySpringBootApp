@@ -20,6 +20,11 @@ import static org.springframework.http.MediaType.APPLICATION_XML_VALUE;
 public class UserEntityRestController {
     private final UserEntityService service;
 
+    @GetMapping("/welcome")
+    public String welcome() {
+        return "이 페이지는 로그인 없이 접근 할 수 있는 페이지입니다.";
+    }
+
     @PostMapping
     public UserResponse addUser(@RequestBody UserRequest request) {
         return service.insertUser(request);
