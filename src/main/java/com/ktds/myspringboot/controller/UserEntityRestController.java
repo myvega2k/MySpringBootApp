@@ -36,4 +36,8 @@ public class UserEntityRestController {
     public ResponseEntity<?> getUserByEmail(@PathVariable String email){
         return service.getUserByEmail(email);
     }
+    @PatchMapping("/{email}")
+    public UserResponse updateUser(@PathVariable String email,@RequestBody UserRequest request){
+        return service.updateUser(email, request);
+    }
 }

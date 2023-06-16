@@ -66,7 +66,7 @@ public class UserEntityService {
     public UserResponse updateUser(String email, UserRequest request){
         UserEntity existUser = repository.findByEmail(email)
                 .orElseThrow(() -> new ResourceNotFoundException("Users", "email", email));
-        //setter 호출
+        //Dirty Checking
         existUser.setName(request.getName());
         return modelMapper.map(existUser, UserResponse.class);
     }
