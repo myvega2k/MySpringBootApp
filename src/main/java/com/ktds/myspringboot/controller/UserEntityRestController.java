@@ -40,4 +40,10 @@ public class UserEntityRestController {
     public UserResponse updateUser(@PathVariable String email,@RequestBody UserRequest request){
         return service.updateUser(email, request);
     }
+
+    @DeleteMapping("/{email}")
+    public ResponseEntity<?> deleteUser(@PathVariable String email){
+        return service.deleteUser(email);
+    }
+
 }
