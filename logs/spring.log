@@ -9836,3 +9836,75 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No b
 2023-06-16T14:30:51.687+09:00  INFO 3192 --- [restartedMain] c.k.m.r.MyRunner                         : Program Argument = true
 2023-06-16T14:30:51.687+09:00  INFO 3192 --- [restartedMain] c.k.m.r.MyRunner                         : VM Argument = false
 2023-06-16T14:30:51.688+09:00  INFO 3192 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-06-16T14:32:16.202+09:00  INFO 3192 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-06-16T14:32:16.207+09:00  INFO 3192 --- [Thread-11] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-06-16T14:32:16.210+09:00  INFO 3192 --- [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-16T14:32:16.210+09:00  INFO 3192 --- [Thread-11] c.z.h.HikariDataSource                   : HikariPool-3 - Shutdown initiated...
+2023-06-16T14:32:16.212+09:00  INFO 3192 --- [Thread-11] c.z.h.HikariDataSource                   : HikariPool-3 - Shutdown completed.
+2023-06-16T14:32:16.278+09:00  INFO 3192 --- [restartedMain] c.k.m.MySpringBootAppApplication         : Starting MySpringBootAppApplication using Java 17 with PID 3192 (C:\SpringBoot\MySpringBoot-App\target\classes started by User in C:\SpringBoot\MySpringBoot-App)
+2023-06-16T14:32:16.279+09:00  INFO 3192 --- [restartedMain] c.k.m.MySpringBootAppApplication         : The following 1 profile is active: "prod"
+2023-06-16T14:32:16.408+09:00  INFO 3192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-16T14:32:16.415+09:00  INFO 3192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 2 JPA repository interfaces.
+2023-06-16T14:32:16.473+09:00  INFO 3192 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-06-16T14:32:16.473+09:00  INFO 3192 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-06-16T14:32:16.473+09:00  INFO 3192 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-16T14:32:16.483+09:00  INFO 3192 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-06-16T14:32:16.483+09:00  INFO 3192 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 203 ms
+2023-06-16T14:32:16.489+09:00  INFO 3192 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-4 - Starting...
+2023-06-16T14:32:16.491+09:00  INFO 3192 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-4 - Added connection org.mariadb.jdbc.Connection@7e588712
+2023-06-16T14:32:16.491+09:00  INFO 3192 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-4 - Start completed.
+2023-06-16T14:32:16.492+09:00  INFO 3192 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2023-06-16T14:32:16.506+09:00  INFO 3192 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-16T14:32:16.510+09:00  INFO 3192 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2023-06-16T14:32:16.510+09:00  WARN 3192 --- [restartedMain] o.h.o.deprecation                        : HHH90000026: MariaDB103Dialect has been deprecated; use org.hibernate.dialect.MariaDBDialect instead
+2023-06-16T14:32:16.621+09:00  INFO 3192 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-16T14:32:16.622+09:00  INFO 3192 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-16T14:32:16.665+09:00  WARN 3192 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-16T14:32:16.687+09:00  INFO 3192 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-06-16T14:32:16.704+09:00  WARN 3192 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-06-16T14:32:16.730+09:00  INFO 3192 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-16T14:32:16.735+09:00  INFO 3192 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-16T14:32:16.737+09:00  INFO 3192 --- [restartedMain] c.k.m.MySpringBootAppApplication         : Started MySpringBootAppApplication in 0.497 seconds (process running for 1240.653)
+2023-06-16T14:32:16.738+09:00  INFO 3192 --- [restartedMain] c.k.m.r.DBRunner                         : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2023-06-16T14:32:16.738+09:00  INFO 3192 --- [restartedMain] c.k.m.r.DBRunner                         : DB Username = boot
+2023-06-16T14:32:16.738+09:00  INFO 3192 --- [restartedMain] c.k.m.r.DBRunner                         : DB Vendor name = MariaDB
+2023-06-16T14:32:16.739+09:00  INFO 3192 --- [restartedMain] c.k.m.r.MyRunner                         : Customer Bean = ProdMode
+2023-06-16T14:32:16.739+09:00  INFO 3192 --- [restartedMain] c.k.m.r.MyRunner                         : Program Argument = true
+2023-06-16T14:32:16.739+09:00  INFO 3192 --- [restartedMain] c.k.m.r.MyRunner                         : VM Argument = false
+2023-06-16T14:32:16.739+09:00  INFO 3192 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-06-16T14:32:18.175+09:00  INFO 3192 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-06-16T14:32:18.186+09:00  INFO 3192 --- [Thread-15] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-06-16T14:32:18.188+09:00  INFO 3192 --- [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-16T14:32:18.188+09:00  INFO 3192 --- [Thread-15] c.z.h.HikariDataSource                   : HikariPool-4 - Shutdown initiated...
+2023-06-16T14:32:18.192+09:00  INFO 3192 --- [Thread-15] c.z.h.HikariDataSource                   : HikariPool-4 - Shutdown completed.
+2023-06-16T14:32:18.258+09:00  INFO 3192 --- [restartedMain] c.k.m.MySpringBootAppApplication         : Starting MySpringBootAppApplication using Java 17 with PID 3192 (C:\SpringBoot\MySpringBoot-App\target\classes started by User in C:\SpringBoot\MySpringBoot-App)
+2023-06-16T14:32:18.258+09:00  INFO 3192 --- [restartedMain] c.k.m.MySpringBootAppApplication         : The following 1 profile is active: "prod"
+2023-06-16T14:32:18.356+09:00  INFO 3192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-16T14:32:18.363+09:00  INFO 3192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 2 JPA repository interfaces.
+2023-06-16T14:32:18.409+09:00  INFO 3192 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-06-16T14:32:18.409+09:00  INFO 3192 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-06-16T14:32:18.410+09:00  INFO 3192 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-16T14:32:18.419+09:00  INFO 3192 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-06-16T14:32:18.419+09:00  INFO 3192 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 160 ms
+2023-06-16T14:32:18.424+09:00  INFO 3192 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-5 - Starting...
+2023-06-16T14:32:18.427+09:00  INFO 3192 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-5 - Added connection org.mariadb.jdbc.Connection@4e6950b2
+2023-06-16T14:32:18.427+09:00  INFO 3192 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-5 - Start completed.
+2023-06-16T14:32:18.427+09:00  INFO 3192 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2023-06-16T14:32:18.441+09:00  INFO 3192 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-16T14:32:18.444+09:00  INFO 3192 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2023-06-16T14:32:18.444+09:00  WARN 3192 --- [restartedMain] o.h.o.deprecation                        : HHH90000026: MariaDB103Dialect has been deprecated; use org.hibernate.dialect.MariaDBDialect instead
+2023-06-16T14:32:18.551+09:00  INFO 3192 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-16T14:32:18.551+09:00  INFO 3192 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-16T14:32:18.587+09:00  WARN 3192 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-16T14:32:18.605+09:00  INFO 3192 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-06-16T14:32:18.617+09:00  WARN 3192 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-06-16T14:32:18.637+09:00  INFO 3192 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-16T14:32:18.641+09:00  INFO 3192 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-16T14:32:18.643+09:00  INFO 3192 --- [restartedMain] c.k.m.MySpringBootAppApplication         : Started MySpringBootAppApplication in 0.418 seconds (process running for 1242.558)
+2023-06-16T14:32:18.644+09:00  INFO 3192 --- [restartedMain] c.k.m.r.DBRunner                         : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2023-06-16T14:32:18.644+09:00  INFO 3192 --- [restartedMain] c.k.m.r.DBRunner                         : DB Username = boot
+2023-06-16T14:32:18.644+09:00  INFO 3192 --- [restartedMain] c.k.m.r.DBRunner                         : DB Vendor name = MariaDB
+2023-06-16T14:32:18.644+09:00  INFO 3192 --- [restartedMain] c.k.m.r.MyRunner                         : Customer Bean = ProdMode
+2023-06-16T14:32:18.644+09:00  INFO 3192 --- [restartedMain] c.k.m.r.MyRunner                         : Program Argument = true
+2023-06-16T14:32:18.644+09:00  INFO 3192 --- [restartedMain] c.k.m.r.MyRunner                         : VM Argument = false
+2023-06-16T14:32:18.645+09:00  INFO 3192 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
