@@ -7153,3 +7153,73 @@ Caused by: java.lang.ClassNotFoundException: com.ktds.myspringboot.service.UserE
 2023-06-16T12:58:30.175+09:00  INFO 2984 --- [restartedMain] c.k.m.r.MyRunner                         : Program Argument = true
 2023-06-16T12:58:30.175+09:00  INFO 2984 --- [restartedMain] c.k.m.r.MyRunner                         : VM Argument = false
 2023-06-16T12:58:30.175+09:00  INFO 2984 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-06-16T13:12:53.736+09:00  INFO 2984 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 2 deletions, 0 modifications)
+2023-06-16T13:12:53.741+09:00  INFO 2984 --- [Thread-26] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-06-16T13:12:53.744+09:00  INFO 2984 --- [Thread-26] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-16T13:12:53.744+09:00  INFO 2984 --- [Thread-26] c.z.h.HikariDataSource                   : HikariPool-8 - Shutdown initiated...
+2023-06-16T13:12:53.745+09:00  INFO 2984 --- [Thread-26] c.z.h.HikariDataSource                   : HikariPool-8 - Shutdown completed.
+2023-06-16T13:12:53.805+09:00  INFO 2984 --- [restartedMain] c.k.m.MySpringBootAppApplication         : Starting MySpringBootAppApplication using Java 17 with PID 2984 (C:\SpringBoot\MySpringBoot-App\target\classes started by User in C:\SpringBoot\MySpringBoot-App)
+2023-06-16T13:12:53.805+09:00  INFO 2984 --- [restartedMain] c.k.m.MySpringBootAppApplication         : The following 1 profile is active: "prod"
+2023-06-16T13:12:53.890+09:00  INFO 2984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-16T13:12:53.896+09:00  INFO 2984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 2 JPA repository interfaces.
+2023-06-16T13:12:53.942+09:00  INFO 2984 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-06-16T13:12:53.942+09:00  INFO 2984 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-06-16T13:12:53.942+09:00  INFO 2984 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-16T13:12:53.951+09:00  INFO 2984 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-06-16T13:12:53.951+09:00  INFO 2984 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 144 ms
+2023-06-16T13:12:53.956+09:00  INFO 2984 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-9 - Starting...
+2023-06-16T13:12:53.958+09:00  INFO 2984 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-9 - Added connection org.mariadb.jdbc.Connection@7f6e3bcf
+2023-06-16T13:12:53.958+09:00  INFO 2984 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-9 - Start completed.
+2023-06-16T13:12:53.959+09:00  INFO 2984 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2023-06-16T13:12:53.970+09:00  INFO 2984 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-16T13:12:53.973+09:00  INFO 2984 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2023-06-16T13:12:53.974+09:00  WARN 2984 --- [restartedMain] o.h.o.deprecation                        : HHH90000026: MariaDB103Dialect has been deprecated; use org.hibernate.dialect.MariaDBDialect instead
+2023-06-16T13:12:54.063+09:00  INFO 2984 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-16T13:12:54.063+09:00  INFO 2984 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-16T13:12:54.076+09:00  WARN 2984 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-16T13:12:54.104+09:00  WARN 2984 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-06-16T13:12:54.136+09:00  INFO 2984 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-16T13:12:54.139+09:00  INFO 2984 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-16T13:12:54.141+09:00  INFO 2984 --- [restartedMain] c.k.m.MySpringBootAppApplication         : Started MySpringBootAppApplication in 0.362 seconds (process running for 3584.284)
+2023-06-16T13:12:54.141+09:00  INFO 2984 --- [restartedMain] c.k.m.r.DBRunner                         : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2023-06-16T13:12:54.141+09:00  INFO 2984 --- [restartedMain] c.k.m.r.DBRunner                         : DB Username = boot
+2023-06-16T13:12:54.141+09:00  INFO 2984 --- [restartedMain] c.k.m.r.DBRunner                         : DB Vendor name = MariaDB
+2023-06-16T13:12:54.142+09:00  INFO 2984 --- [restartedMain] c.k.m.r.MyRunner                         : Customer Bean = ProdMode
+2023-06-16T13:12:54.142+09:00  INFO 2984 --- [restartedMain] c.k.m.r.MyRunner                         : Program Argument = true
+2023-06-16T13:12:54.142+09:00  INFO 2984 --- [restartedMain] c.k.m.r.MyRunner                         : VM Argument = false
+2023-06-16T13:12:54.142+09:00  INFO 2984 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-06-16T13:13:21.048+09:00  INFO 2984 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (2 additions, 0 deletions, 0 modifications)
+2023-06-16T13:13:21.053+09:00  INFO 2984 --- [Thread-33] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-06-16T13:13:21.056+09:00  INFO 2984 --- [Thread-33] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-16T13:13:21.056+09:00  INFO 2984 --- [Thread-33] c.z.h.HikariDataSource                   : HikariPool-9 - Shutdown initiated...
+2023-06-16T13:13:21.059+09:00  INFO 2984 --- [Thread-33] c.z.h.HikariDataSource                   : HikariPool-9 - Shutdown completed.
+2023-06-16T13:13:21.120+09:00  INFO 2984 --- [restartedMain] c.k.m.MySpringBootAppApplication         : Starting MySpringBootAppApplication using Java 17 with PID 2984 (C:\SpringBoot\MySpringBoot-App\target\classes started by User in C:\SpringBoot\MySpringBoot-App)
+2023-06-16T13:13:21.120+09:00  INFO 2984 --- [restartedMain] c.k.m.MySpringBootAppApplication         : The following 1 profile is active: "prod"
+2023-06-16T13:13:21.212+09:00  INFO 2984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-16T13:13:21.218+09:00  INFO 2984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 2 JPA repository interfaces.
+2023-06-16T13:13:21.257+09:00  INFO 2984 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-06-16T13:13:21.258+09:00  INFO 2984 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-06-16T13:13:21.258+09:00  INFO 2984 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-16T13:13:21.266+09:00  INFO 2984 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-06-16T13:13:21.266+09:00  INFO 2984 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 144 ms
+2023-06-16T13:13:21.270+09:00  INFO 2984 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-10 - Starting...
+2023-06-16T13:13:21.273+09:00  INFO 2984 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-10 - Added connection org.mariadb.jdbc.Connection@b7e36b5
+2023-06-16T13:13:21.273+09:00  INFO 2984 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-10 - Start completed.
+2023-06-16T13:13:21.273+09:00  INFO 2984 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2023-06-16T13:13:21.286+09:00  INFO 2984 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-16T13:13:21.289+09:00  INFO 2984 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2023-06-16T13:13:21.289+09:00  WARN 2984 --- [restartedMain] o.h.o.deprecation                        : HHH90000026: MariaDB103Dialect has been deprecated; use org.hibernate.dialect.MariaDBDialect instead
+2023-06-16T13:13:21.387+09:00  INFO 2984 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-16T13:13:21.387+09:00  INFO 2984 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-16T13:13:21.420+09:00  WARN 2984 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-16T13:13:21.445+09:00  WARN 2984 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-06-16T13:13:21.464+09:00  INFO 2984 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-16T13:13:21.467+09:00  INFO 2984 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-16T13:13:21.469+09:00  INFO 2984 --- [restartedMain] c.k.m.MySpringBootAppApplication         : Started MySpringBootAppApplication in 0.375 seconds (process running for 3611.613)
+2023-06-16T13:13:21.469+09:00  INFO 2984 --- [restartedMain] c.k.m.r.DBRunner                         : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2023-06-16T13:13:21.470+09:00  INFO 2984 --- [restartedMain] c.k.m.r.DBRunner                         : DB Username = boot
+2023-06-16T13:13:21.470+09:00  INFO 2984 --- [restartedMain] c.k.m.r.DBRunner                         : DB Vendor name = MariaDB
+2023-06-16T13:13:21.470+09:00  INFO 2984 --- [restartedMain] c.k.m.r.MyRunner                         : Customer Bean = ProdMode
+2023-06-16T13:13:21.470+09:00  INFO 2984 --- [restartedMain] c.k.m.r.MyRunner                         : Program Argument = true
+2023-06-16T13:13:21.470+09:00  INFO 2984 --- [restartedMain] c.k.m.r.MyRunner                         : VM Argument = false
+2023-06-16T13:13:21.470+09:00  INFO 2984 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged

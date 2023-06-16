@@ -70,4 +70,15 @@ public class UserEntityService {
         existUser.setName(request.getName());
         return modelMapper.map(existUser, UserResponse.class);
     }
+
+    public ResponseEntity<?> deleteUser(String email) {
+        Optional<UserEntity> optional = repository.findByEmail(email);
+        if(optional.isEmpty()){
+            return ResponseEntity.status(HttpStatus.NOT_FOUND)
+                    .body(email +"에 해당하는 User가 존재하지 않습니다!");
+        }
+        UserEntity userEntity = optional.get();
+        repository.delete(userEntity);
+        return ResponseEntity.ok(email + " 해당하는 User가 삭제 되었습니다!");
+    }
 }
