@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+import static org.springframework.http.MediaType.APPLICATION_JSON_UTF8_VALUE;
+
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/users")
@@ -30,7 +32,7 @@ public class UserEntityRestController {
         return service.getUserById(id);
     }
 
-    @GetMapping(value = "/email/{email}",produces = {"application/json;charset=utf-8"})
+    @GetMapping(value = "/email/{email}/",produces = APPLICATION_JSON_UTF8_VALUE)
     public ResponseEntity<?> getUserByEmail(@PathVariable String email){
         return service.getUserByEmail(email);
     }
