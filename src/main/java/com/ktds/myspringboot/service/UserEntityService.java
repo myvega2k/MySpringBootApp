@@ -3,6 +3,7 @@ package com.ktds.myspringboot.service;
 import com.ktds.myspringboot.dto.UserRequest;
 import com.ktds.myspringboot.dto.UserResponse;
 import com.ktds.myspringboot.entity.UserEntity;
+import com.ktds.myspringboot.exception.ResourceNotFoundException;
 import com.ktds.myspringboot.repository.UserEntityRepository;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
@@ -41,6 +42,14 @@ public class UserEntityService {
         return userEntityList.stream() //Stream<UserEntity>
                 .map(entity -> modelMapper.map(entity, UserResponse.class)) //Stream<UserResponse>
                 .collect(toList()); //List<UserResponse>
+    }
+
+    @Transactional(readOnly = true)
+    public UserResponse getUser(long id) {
+        UserEntity userEntity = repository.findById(id) //Optional<UserEntity>
+                //orElseThrow(Supplier) Supplier의 추상메서드 T get()
+                .orElseThrow(() -> new ResourceNotFoundException("Users","id",id));
+        return modelMapper.map(userEntity, UserResponse.class);  //UserEntity -> UserReponse로 변환해서 리턴
     }
 
 
