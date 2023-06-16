@@ -27,7 +27,7 @@ public class UserController {
         if (result.hasErrors()) {
             return "add-user";
         }
-        service.insertUser(user)
+        service.insertUser(user);
         model.addAttribute("users", service.listUser());
         return "index";
     }
