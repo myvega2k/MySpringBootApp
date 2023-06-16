@@ -2,7 +2,9 @@ package com.ktds.myspringboot.controller;
 
 import com.ktds.myspringboot.dto.UserRequest;
 import com.ktds.myspringboot.dto.UserResponse;
+import com.ktds.myspringboot.dto.Users;
 import com.ktds.myspringboot.service.UserEntityService;
+import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -10,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 import static org.springframework.http.MediaType.APPLICATION_JSON_UTF8_VALUE;
+import static org.springframework.http.MediaType.APPLICATION_XML_VALUE;
 
 @RestController
 @RequiredArgsConstructor
@@ -46,4 +49,10 @@ public class UserEntityRestController {
         return service.deleteUser(email);
     }
 
+    @GetMapping(value="/xml", produces = APPLICATION_XML_VALUE)
+    public Users listUserXml() {
+        Users users = new Users();
+        users.setUsers(service.listUser());
+        return users;
+    }
 }
