@@ -7,11 +7,13 @@ import com.ktds.myspringboot.exception.ResourceNotFoundException;
 import com.ktds.myspringboot.repository.UserEntityRepository;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
-import java.util.stream.Collectors;
+import java.util.Optional;
 
 import static java.util.stream.Collectors.toList;
 
@@ -45,12 +47,18 @@ public class UserEntityService {
     }
 
     @Transactional(readOnly = true)
-    public UserResponse getUser(long id) {
+    public UserResponse getUserById(long id) {
         UserEntity userEntity = repository.findById(id) //Optional<UserEntity>
                 //orElseThrow(Supplier) Supplier의 추상메서드 T get()
                 .orElseThrow(() -> new ResourceNotFoundException("Users","id",id));
         return modelMapper.map(userEntity, UserResponse.class);  //UserEntity -> UserReponse로 변환해서 리턴
     }
-
-
+    @Transactional(readOnly = true)
+    public ResponseEntity<?> getUserByEmail(String email){
+        Optional<UserEntity> optional = repository.findByEmail(email);
+        if(optional.isEmpty()){
+            return ResponseEntity.status(HttpStatus.NOT_FOUND)
+                    .body(email +"에 해당하는 User가 존재하지 않습니다!");
+        }
+    }
 }
